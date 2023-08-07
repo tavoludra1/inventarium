@@ -1,4 +1,4 @@
-"use-client"
+"use client"
 
 import { UserButton } from "@clerk/nextjs";
 import { Crown } from "lucide-react";
@@ -20,10 +20,10 @@ const font = Poppins({
 
 export const Navbar = () => {
     return (
-        <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 border-b border-primary/10 bg-secondary ">
+        <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 border-b border-primary/10 bg-secondary h-16">
             <div className="flex items-center">
                 <Link href="/">
-                    <div className="flex items-center space-x-">
+                    <div className="flex items-center space-x-1">
                         <div className={cn(
                             "bg-gray-500 w-8 h-8 rounded-full flex items-center justify-center text-white text-lg",
                             font.className,
@@ -31,7 +31,7 @@ export const Navbar = () => {
                             I
                         </div>
                         <span className={cn(
-                            "fill-white text-white text-lg",
+                            "fill-white dark:text-white text-lg",
                             font.className,
                         )}>
                             nventarium
