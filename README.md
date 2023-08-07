@@ -52,5 +52,11 @@ Cuando se instala node modules se busca la carpeta de lucide-react y se cambia d
 npm i next-themes@latest
 ```
 
+## instalar query-string
+```bash
+npm i query-string@latest
+```
+
+
 
 
