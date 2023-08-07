@@ -44,5 +44,8 @@ npx shadcn-ui@latest init
 npm install @clerk/nextjs
 ```
 
+## Correccion Iconos Lucide-react
+Cuando se instala node modules se busca la carpeta de lucide-react y se cambia de nombre la que se encuentra dentro de dist/ em por cjs para encontrar los iconos
+
 
 
