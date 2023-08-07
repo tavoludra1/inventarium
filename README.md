@@ -39,5 +39,10 @@ Instalar componentes por medio de shadcn
 npx shadcn-ui@latest init
 ```
 
+## clerk auth
+```bash
+npm install @clerk/nextjs
+```
+
 
 
