@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 
 
 
@@ -22,7 +23,7 @@ export const Navbar = () => {
         <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 border-b border-primary/10 bg-secondary ">
             <div className="flex items-center">
                 <Link href="/">
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-">
                         <div className={cn(
                             "bg-gray-500 w-8 h-8 rounded-full flex items-center justify-center text-white text-lg",
                             font.className,
@@ -30,7 +31,7 @@ export const Navbar = () => {
                             I
                         </div>
                         <span className={cn(
-                            "text-lg text-gray-500",
+                            "fill-white text-white text-lg",
                             font.className,
                         )}>
                             nventarium
@@ -44,6 +45,7 @@ export const Navbar = () => {
                     <Crown className="h-4 w-4 fill-white text-white ml-2"/>
                     
                 </Button>
+                <ModeToggle />
                 <UserButton />
 
             </div>
